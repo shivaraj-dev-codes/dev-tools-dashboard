@@ -52,3 +52,5 @@ dev-tools-dashboard/
 ├── style.css       # Dark-themed UI styling and animations
 ├── script.js       # Tool logic and DOM interactions
 └── README.md       # Project documentation
+
+
