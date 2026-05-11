@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSuite | All-in-One Developer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon"></div>
+                <h2>DevSuite</h2>
+            </div>
+            <nav>
+                <button class="nav-btn active" data-tool="json">JSON Formatter</button>
+                <button class="nav-btn" data-tool="base64">Base64 Converter</button>
+                <button class="nav-btn" data-tool="regex">Regex Tester</button>
+                <button class="nav-btn" data-tool="color">Color Picker</button>
+            </nav>
+            <div class="sidebar-footer">
+                <p>GitHub Ready v1.0</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <!-- JSON TOOL -->
+            <section id="json" class="tool-section active">
+                <header>
+                    <h1>JSON Formatter</h1>
+                    <p>Clean, validate, and beautify your JSON data.</p>
+                </header>
+                <div class="editor-area">
+                    <textarea id="json-input" placeholder="Paste your messy JSON here..."></textarea>
+                    <div class="actions">
+                        <button class="btn primary" onclick="formatJSON()">Beautify</button>
+                        <button class="btn secondary" onclick="minifyJSON()">Minify</button>
+                        <button class="btn secondary" onclick="copyContent('json-input')">Copy</button>
+                        <button class="btn danger" onclick="clearInput('json-input')">Clear</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BASE64 TOOL -->
+            <section id="base64" class="tool-section">
+                <header>
+                    <h1>Base64 Encoder/Decoder</h1>
+                    <p>Easily convert text to Base64 and vice versa.</p>
+                </header>
+                <div class="editor-area">
+                    <textarea id="base64-input" placeholder="Enter text or Base64 string..."></textarea>
+                    <div class="actions">
+                        <button class="btn primary" onclick="encodeB64()">Encode</button>
+                        <button class="btn primary" onclick="decodeB64()">Decode</button>
+                        <button class="btn secondary" onclick="copyContent('base64-input')">Copy</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- REGEX TOOL -->
+            <section id="regex" class="tool-section">
+                <header>
+                    <h1>Regex Tester</h1>
+                    <p>Test your expressions against sample text in real-time.</p>
+                </header>
+                <div class="tool-card">
+                    <input type="text" id="regex-pattern" placeholder="Enter Regex (e.g., [a-z]+)">
+                    <textarea id="regex-test-text" placeholder="Enter test string..."></textarea>
+                    <div id="regex-matches" class="match-display">Matches will appear here...</div>
+                </div>
+            </section>
+
+            <!-- COLOR TOOL -->
+            <section id="color" class="tool-section">
+                <header>
+                    <h1>Color Picker</h1>
+                    <p>Select colors and get their HEX/RGB values.</p>
+                </header>
+                <div class="color-container">
+                    <input type="color" id="color-input" value="#6366f1">
+                    <div class="color-stats">
+                        <div class="stat-row">
+                            <span>HEX:</span>
+                            <code id="hex-label">#6366F1</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
