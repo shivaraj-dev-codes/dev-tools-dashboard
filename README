@@ -1,0 +1,54 @@
+#  – All-in-One Developer Dashboard
+
+ is a sleek, modern, and responsive web application that brings together essential developer utilities into one powerful dashboard. Designed with a professional dark-themed interface, it helps developers perform common tasks quickly and efficiently without relying on multiple online tools.
+
+Built using pure HTML, CSS, and JavaScript, DevSuite delivers a fast and lightweight experience with no external frameworks required. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1} :contentReference[oaicite:2]{index=2}
+
+---
+
+## ✨ Features
+
+### 🧩 JSON Formatter & Minifier
+- Beautify and validate JSON with proper indentation
+- Minify JSON for optimized storage and transmission
+- Detect invalid JSON and display error alerts
+
+### 🔐 Base64 Encoder / Decoder
+- Convert plain text into Base64 format
+- Decode Base64 strings back into readable text
+- Useful for data encoding and API payload handling
+
+### 🔍 Real-Time Regex Tester
+- Test regular expressions instantly
+- View all matching results dynamically
+- Supports global pattern matching
+
+### 🎨 Interactive Color Picker
+- Select colors visually using a built-in color picker
+- Instantly retrieve HEX color codes
+- Ideal for UI and frontend development
+
+### 🖥️ Single Page Dashboard
+- Smooth tab-based navigation
+- Responsive layout for desktop and laptop screens
+- Modern dark UI with animated transitions
+
+---
+
+## 🛠️ Technology Stack
+
+- **HTML5** – Semantic structure and accessibility
+- **CSS3** – Custom properties, Flexbox, and animations
+- **JavaScript (ES6+)** – DOM manipulation and tool functionality
+- **Google Fonts** – Inter and Fira Code typography
+
+---
+
+## 📁 Project Structure
+
+```text
+dev-tools-dashboard/
+├── index.html      # Main application structure
+├── style.css       # Dark-themed UI styling and animations
+├── script.js       # Tool logic and DOM interactions
+└── README.md       # Project documentation
